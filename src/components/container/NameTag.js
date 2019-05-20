@@ -6,8 +6,8 @@ import Shape from '../presentational/Shape';
 export default class NameTag extends PureComponent {
   state = {
     text: '',
-    fontColor: '',
-    backgroundColor: ''
+    color: 'black',
+    backgroundColor: 'white'
   }
 
   handleChange = ({ target }) => {
@@ -17,13 +17,12 @@ export default class NameTag extends PureComponent {
 
   render() {
 
-    const { text, fontColor, backgroundColor } = this.state;
+    const { text, color, backgroundColor } = this.state;
     return (
       <>
-      <TextSelector handleChange={this.handleChange} />
-      <ColorSelector color={backgroundColor} handleChange={this.handleChange} />
-      <ColorSelector color={text} handleChange={this.handleChange} />
-      <Shape text={text} backgroundColor={backgroundColor} fontColor={fontColor}/>
+      <TextSelector text={text} handleChange={this.handleChange} />
+      <ColorSelector color={color} backgroundColor={backgroundColor}  handleChange={this.handleChange} />
+      <Shape {...this.state}/>
       </>
     );
   }

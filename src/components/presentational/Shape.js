@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Shape({ text, backgroundColor, textColor }) {
+export default function Shape({ text, color, backgroundColor }) {
+  const style = { 
+    width: '100px', 
+    height: '100px', 
+    backgroundColor, 
+    color
+  };
+
   return (
-    <div style={{ width: '100px', height: '100px', backgroundColor: backgroundColor, color: textColor }}>{text}</div>
+    <div style={style}>{text}</div>
   );
 }
 
 Shape.propTypes = {
   backgroundColor: PropTypes.string, 
-  textColor: PropTypes.string, 
+  color: PropTypes.string, 
   text: PropTypes.string 
 };
