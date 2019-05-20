@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ColorSelector({ backgroundColor, textColor }) {
+export default function ColorSelector({ color, handleChange }) {
   return (
-    <input name="backgroundColor" value={backgroundColor} type="color" />,
-    <input name="textColor" value={textColor} type="color" />
+    <input name="color" value={color} type="color" onChange={handleChange} />
   );
 }
   
 ColorSelector.propTypes = {
-  backgroundColor: PropTypes.string, 
-  textColor: PropTypes.string 
+  color: PropTypes.string,
+  handleChange: PropTypes.func
 };

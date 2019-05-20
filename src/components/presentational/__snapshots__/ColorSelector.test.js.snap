@@ -2,7 +2,7 @@
 
 exports[`ColorSelector Test renders ColorSelector 1`] = `
 <input
-  name="textColor"
+  name="color"
   type="color"
 />
 `;

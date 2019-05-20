@@ -3,17 +3,19 @@
 exports[`NameTag Test renders NameTag 1`] = `
 <Fragment>
   <TextSelector
-    onChange={[Function]}
+    handleChange={[Function]}
   />
   <ColorSelector
-    onChange={[Function]}
+    color=""
+    handleChange={[Function]}
   />
   <ColorSelector
-    onChange={[Function]}
+    color=""
+    handleChange={[Function]}
   />
   <Shape
-    backgroundColor="white"
-    fontColor="black"
+    backgroundColor=""
+    fontColor=""
     text=""
   />
 </Fragment>
