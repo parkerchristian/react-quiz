@@ -1,5 +1,12 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import TextSelector from '../presentational/TextSelector';
 
-export default function NameTag() {
-  return <h1>sup</h1>;
+export default class NameTag extends PureComponent {
+  render() {
+    return (
+      <>
+      <TextSelector />
+      </>
+    );
+  }
 }
