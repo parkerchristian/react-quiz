@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorSelector Test renders ColorSelector 1`] = `
+<input
+  name="textColor"
+  type="color"
+/>
+`;

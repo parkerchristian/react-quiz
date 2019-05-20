@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameTag Test renders NameTag 1`] = `
+<Fragment>
+  <TextSelector
+    onChange={[Function]}
+    text=""
+  />
+  <ColorSelector
+    backgroundColor="white"
+    onChange={[Function]}
+  />
+  <ColorSelector
+    fontColor="black"
+    onChange={[Function]}
+  />
+  <Shape
+    onChange={[Function]}
+  />
+</Fragment>
+`;
