@@ -4,18 +4,17 @@ exports[`NameTag Test renders NameTag 1`] = `
 <Fragment>
   <TextSelector
     onChange={[Function]}
-    text=""
   />
   <ColorSelector
-    backgroundColor="white"
     onChange={[Function]}
   />
   <ColorSelector
-    fontColor="black"
     onChange={[Function]}
   />
   <Shape
-    onChange={[Function]}
+    backgroundColor="white"
+    fontColor="black"
+    text=""
   />
 </Fragment>
 `;
