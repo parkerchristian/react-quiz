@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ColorSelector Test renders ColorSelector 1`] = `
-<input
-  name="color"
-  type="color"
-/>
+<Fragment>
+  <input
+    name="backgroundColor"
+    type="color"
+  />
+  <input
+    name="color"
+    type="color"
+  />
+</Fragment>
 `;
